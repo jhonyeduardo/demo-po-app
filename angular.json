@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "app-demo-po": {
+    "demo-po-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/app-demo-po",
+            "outputPath": "dist/demo-po-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@portinari/style/css/po-theme-default.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -63,18 +64,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "app-demo-po:build"
+            "browserTarget": "demo-po-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "app-demo-po:build:production"
+              "browserTarget": "demo-po-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "app-demo-po:build"
+            "browserTarget": "demo-po-app:build"
           }
         },
         "test": {
@@ -89,6 +90,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@portinari/style/css/po-theme-default.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -111,15 +113,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "app-demo-po:serve"
+            "devServerTarget": "demo-po-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "app-demo-po:serve:production"
+              "devServerTarget": "demo-po-app:serve:production"
             }
           }
         }
       }
-    }},
-  "defaultProject": "app-demo-po"
+    }
+  },
+  "defaultProject": "demo-po-app"
 }

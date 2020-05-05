@@ -1,0 +1,27 @@
+<po-page-detail [p-title]="title">
+
+  <div class="po-row">
+    <po-info class="po-md-6 po-lg-4" p-label="ID" [p-value]="customer?.id">
+    </po-info>
+    <po-info class="po-md-6 po-lg-4" p-label="Nome" [p-value]="customer?.name">
+    </po-info>
+    <po-info class="po-md-6 po-lg-4" p-label="Email" [p-value]="customer?.email">
+    </po-info>
+  </div>
+
+  <div class="po-row">
+    <po-info class="po-md-6 po-lg-4" p-label="Data de Nascimento" [p-value]="customer?.birthday">
+    </po-info>
+    <po-info class="po-md-6 po-lg-4" p-label="CPF" [p-value]="customer?.cpf">
+    </po-info>
+    <po-info class="po-md-6 po-lg-4" p-label="Genêro" [p-value]="customer?.genre">
+    </po-info>
+  </div>
+
+  <po-divider p-label="ENDEREÇO">
+  </po-divider>
+
+  <po-info class="po-md-6" p-label="CEP" [p-value]="customer?.zipcode"></po-info>
+  <po-info class="po-md-6" p-label="Número" [p-value]="customer?.address_number"></po-info>
+
+</po-page-detail>

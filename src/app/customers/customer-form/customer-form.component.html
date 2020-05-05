@@ -1,0 +1,58 @@
+<po-page-edit
+    [p-title]="title">
+
+    <form [formGroup]="customerForm">
+      <div class="po-row">
+        <po-input
+          class="po-md-6 po-lg-4"
+          formControlName="name"
+          p-label="Nome">
+        </po-input>
+
+        <po-email
+          class="po-md-6 po-lg-4"
+          formControlName="email"
+          p-label="Email">
+        </po-email>
+
+        <po-datepicker
+          class="po-md-6 po-lg-4"
+          formControlName="birthday"
+          p-label="Date de nascimento">
+        </po-datepicker>
+      </div>
+
+      <div class="po-row">
+        <po-input
+          class="po-md-6"
+          name="cpf"
+          p-mask="999.999.999-99"
+          formControlName="cpf"
+          p-label="CPF">
+        </po-input>
+
+        <po-radio-group
+          class="po-md-6"
+          formControlName="genre"
+          p-label="Genêro"
+          [p-options]="genreOptions">
+        </po-radio-group>
+      </div>
+
+      <po-divider p-label="Endereço"></po-divider>
+
+      <div class="po-row">
+        <po-input
+          class="po-md-6"
+          formControlName="zipcode"
+          p-label="CEP">
+        </po-input>
+
+        <po-number
+          class="po-md-6"
+          formControlName="address_number"
+          p-label="Número">
+        </po-number>
+      </div>
+    </form>
+</po-page-edit>
