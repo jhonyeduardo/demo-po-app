@@ -1,13 +1,13 @@
 {
   "customers": [
     {
-      "name": "SUPMERCADO",
-      "email": "super@gmail.com",
-      "birthday": "1992-03-13",
-      "genre": "",
-      "cpf": "19239219219",
-      "zipcode": "123123133",
-      "address_number": 2131,
+      "name": "fdfsd",
+      "email": "wewe@gmail.com",
+      "birthday": "2000-02-13",
+      "genre": "male",
+      "cpf": "11919191919",
+      "zipcode": "3324234234",
+      "address_number": null,
       "id": 1
     }
   ]

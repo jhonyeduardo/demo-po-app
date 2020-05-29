@@ -35,7 +35,7 @@ export class CustomerDetailComponent implements OnInit {
   }
 
   back() {
-    this.router.navigate(['/customers']);
+    this.router.navigate(['app/customers']);
   }
 
   remove() {
@@ -49,7 +49,7 @@ export class CustomerDetailComponent implements OnInit {
   edit() {
     const { id } = this.activatedRoute.snapshot.params;
 
-    this.router.navigate([`/customers/edit/${id}`]);
+    this.router.navigate([`app/customers/edit/${id}`]);
   }
 
   private confirmRemove() {
@@ -58,7 +58,7 @@ export class CustomerDetailComponent implements OnInit {
     this.customerService.delete(id).subscribe(() => {
       this.notification.success('Cliente removido com sucesso');
 
-      this.router.navigate([`/customers`]);
+      this.router.navigate([`app/customers`]);
     });
   }
 

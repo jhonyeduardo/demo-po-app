@@ -1,20 +1,15 @@
-import { Component } from '@angular/core';
-
-import { PoMenuItem } from '@portinari/portinari-ui';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
-  templateUrl: './home.component.html'
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
 
-  readonly menus: Array<PoMenuItem> = [
-    {
-      label: 'Clientes',
-      link: 'app/customers',
-      icon: 'po-icon-users',
-      shortLabel: 'Clientes'
-    }
-  ];
+  constructor() { }
+
+  ngOnInit() {
+  }
 
 }

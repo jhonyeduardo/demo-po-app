@@ -7,5 +7,4 @@ export interface Customer {
   genre?: string;
   zipcode?: string;
   address_number?: number;
-
 }

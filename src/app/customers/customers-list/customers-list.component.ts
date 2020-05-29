@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { PoPageAction, PoTableAction, PoTableColumn, PoDialogService } from '@portinari/portinari-ui';
+import { Observable } from 'rxjs';
 
 import { CustomersService } from '../customers.service';
 import { Customer } from '../customer.interface';
@@ -12,21 +13,22 @@ import { Customer } from '../customer.interface';
   styleUrls: ['./customers-list.component.css']
 })
 export class CustomersListComponent implements OnInit {
+
   customers: Array<Customer>;
   isTableLoading = false;
 
   readonly actions: Array<PoPageAction> = [
     {
       label: 'Adicionar',
-      url: 'customers/new',
+      url: 'app/customers/new',
       icon: 'po-icon-plus'
     }
   ];
 
   readonly tableActions: Array<PoTableAction> = [
-    { label: 'Editar', action: customer => this.router.navigate([`customers/edit/${customer.id}`])},
+    { label: 'Editar', action: customer => this.router.navigate([`app/customers/edit/${customer.id}`])},
     { label: 'Remover', action: this.onRemove.bind(this) },
-    { label: 'Visualizar', action: customer => this.router.navigate([`customers/detail/${customer.id}`]) },
+    { label: 'Visualizar', action: customer => this.router.navigate([`app/customers/detail/${customer.id}`]) },
   ];
 
   readonly columns: Array<PoTableColumn> = [

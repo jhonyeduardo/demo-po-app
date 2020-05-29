@@ -2,13 +2,19 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 
+import {
+  PoPageModule,
+  PoTableModule,
+  PoDividerModule,
+  PoFieldModule,
+  PoInfoModule
+} from '@portinari/portinari-ui';
+
 import { CustomersRoutingModule } from './customers-routing.module';
 import { CustomerFormComponent } from './customer-form/customer-form.component';
 import { CustomersListComponent } from './customers-list/customers-list.component';
 import { CustomerDetailComponent } from './customer-detail/customer-detail.component';
-import { PoPageModule, PoTableModule, PoDividerModule, PoFieldModule, PoInfoModule } from '@portinari/portinari-ui';
 import { CustomersService } from './customers.service';
-
 
 @NgModule({
   declarations: [

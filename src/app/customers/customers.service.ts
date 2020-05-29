@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
+import { Observable } from 'rxjs';
+
 import { Customer } from './customer.interface';
 
 @Injectable()
@@ -26,8 +28,8 @@ export class CustomersService {
     return this.http.delete(`${this.url}/${id}`, { headers: this.headers });
   }
 
-  getAll() {
-    return this.http.get(this.url);
+  getAll(): Observable<Array<Customer>> {
+    return this.http.get(this.url) as Observable<Array<Customer>>;
   }
 
   get(id: number) {

@@ -1,19 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { HomeRoutingModule } from './home-routing.module';
-import { HomeComponent } from './home.component';
-import { PoToolbarModule, PoMenuModule } from '@portinari/portinari-ui';
+import { PoPageModule } from '@portinari/portinari-ui';
 
+import { HomeComponent } from './home.component';
+import { HomeRoutingModule } from './home-routing.module';
 
 @NgModule({
-  declarations: [
-    HomeComponent
-  ],
+  declarations: [HomeComponent],
   imports: [
     CommonModule,
-    PoToolbarModule,
-    PoMenuModule,
+    PoPageModule,
     HomeRoutingModule
   ]
 })

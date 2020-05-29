@@ -5,7 +5,6 @@ import { CustomersListComponent } from './customers-list/customers-list.componen
 import { CustomerFormComponent } from './customer-form/customer-form.component';
 import { CustomerDetailComponent } from './customer-detail/customer-detail.component';
 
-
 const routes: Routes = [
   {
     path: '',

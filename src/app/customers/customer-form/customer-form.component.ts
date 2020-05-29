@@ -1,9 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { FormBuilder, Validators, FormGroup, AbstractControl } from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
+
+import { PoNotificationService } from '@portinari/portinari-ui';
+
 import { CustomersService } from '../customers.service';
 import { Customer } from '../customer.interface';
-import { PoNotificationService } from '@portinari/portinari-ui';
 
 @Component({
   selector: 'app-customer-form',
@@ -82,7 +84,7 @@ export class CustomerFormComponent implements OnInit {
     operation.subscribe(() => {
       this.notification.success(successMessage);
 
-      this.router.navigate(['/customers']);
+      this.router.navigate(['app/customers']);
     });
 
   }
