@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { PoPageModule } from '@portinari/portinari-ui';
+import { PoPageModule } from '@po-ui/ng-components';
 
 import { HomeComponent } from './home.component';
 import { HomeRoutingModule } from './home-routing.module';

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { PoPageAction, PoTableAction, PoTableColumn, PoDialogService } from '@portinari/portinari-ui';
+import { PoPageAction, PoTableAction, PoTableColumn, PoDialogService } from '@po-ui/ng-components';
 import { Observable } from 'rxjs';
 
 import { CustomersService } from '../customers.service';

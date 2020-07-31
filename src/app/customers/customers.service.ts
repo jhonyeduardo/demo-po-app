@@ -11,7 +11,7 @@ export class CustomersService {
   private url = 'http://localhost:3000/customers';
 
   readonly headers = new HttpHeaders({
-    'X-PORTINARI-SCREEN-LOCK': 'true'
+    'X-PO-SCREEN-LOCK': 'true'
   });
 
   constructor(private http: HttpClient) { }

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 
-import { PoNotificationService, PoDialogService } from '@portinari/portinari-ui';
+import { PoNotificationService, PoDialogService } from '@po-ui/ng-components';
 
 import { Customer } from '../customer.interface';
 import { CustomersService } from '../customers.service';

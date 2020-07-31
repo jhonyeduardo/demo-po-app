@@ -1,5 +1,5 @@
 {
   "extends": [
-    "@portinari/tslint"
+    "@po-ui/ng-tslint"
   ]
 }

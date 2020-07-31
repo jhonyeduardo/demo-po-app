@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from './main-routing.module';
 import { MainComponent } from './main.component';
 
-import { PoToolbarModule, PoMenuModule } from '@portinari/portinari-ui';
+import { PoToolbarModule, PoMenuModule } from '@po-ui/ng-components';
 import { HomeModule } from '../home/home.module';
 
 @NgModule({

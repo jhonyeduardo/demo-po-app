@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { PoMenuItem, PoToolbarProfile, PoToolbarAction } from '@portinari/portinari-ui';
+import { PoMenuItem, PoToolbarProfile, PoToolbarAction } from '@po-ui/ng-components';
 import { AuthService } from '../core/auth/auth.service';
 import { Router } from '@angular/router';
 

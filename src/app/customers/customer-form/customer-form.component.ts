@@ -2,7 +2,7 @@ import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/fo
 import { ActivatedRoute, Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
-import { PoNotificationService } from '@portinari/portinari-ui';
+import { PoNotificationService } from '@po-ui/ng-components';
 
 import { CustomersService } from '../customers.service';
 import { Customer } from '../customer.interface';

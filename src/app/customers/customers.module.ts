@@ -8,7 +8,7 @@ import {
   PoDividerModule,
   PoFieldModule,
   PoInfoModule
-} from '@portinari/portinari-ui';
+} from '@po-ui/ng-components';
 
 import { CustomersRoutingModule } from './customers-routing.module';
 import { CustomerFormComponent } from './customer-form/customer-form.component';
