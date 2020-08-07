@@ -1,9 +1,9 @@
 {
   "customers": [
     {
-      "name": "fdfsd",
-      "email": "wewe@gmail.com",
-      "birthday": "2000-02-13",
+      "name": "John Doe",
+      "email": "john@gmail.com",
+      "birthday": "1989-02-13",
       "genre": "male",
       "cpf": "11919191919",
       "zipcode": "3324234234",

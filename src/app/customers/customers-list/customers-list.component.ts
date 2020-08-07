@@ -27,8 +27,8 @@ export class CustomersListComponent implements OnInit {
 
   readonly tableActions: Array<PoTableAction> = [
     { label: 'Editar', action: customer => this.router.navigate([`app/customers/edit/${customer.id}`])},
-    { label: 'Remover', action: this.onRemove.bind(this) },
     { label: 'Visualizar', action: customer => this.router.navigate([`app/customers/detail/${customer.id}`]) },
+    { label: 'Remover', separator: true, type: 'danger', icon: 'po-icon-delete', action: this.onRemove.bind(this) }
   ];
 
   readonly columns: Array<PoTableColumn> = [
