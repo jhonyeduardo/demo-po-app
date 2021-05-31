@@ -1,4 +1,9 @@
 {
+  "rules": {
+    "deprecation": {
+      "severity": "warning"
+    }
+  },
   "extends": [
     "@po-ui/ng-tslint"
   ]
