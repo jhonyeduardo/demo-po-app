@@ -1,5 +1,18 @@
 <po-page-default p-title="Ínicio">
 
-  <h2> Seja bem vindo </h2>
+  <po-chart [p-type]="lineType" [p-series]="lineSeries">
+  </po-chart>
+
+  <po-chart [p-type]="columnType" [p-series]="columnSeries">
+  </po-chart>
+
+  <po-chart [p-type]="barType" [p-series]="barSeries">
+  </po-chart>
+
+  <po-chart [p-type]="pieType" [p-series]="pieSeries">
+  </po-chart>
+
+  <po-chart [p-type]="donutType" [p-series]="donutSeries">
+  </po-chart>
 
 </po-page-default>
